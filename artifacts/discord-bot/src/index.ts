@@ -37,6 +37,11 @@ const spotifyOptions =
 const distube = new DisTube(client, {
   emitNewSongOnly: true,
   plugins: [new YouTubePlugin(), new SpotifyPlugin(spotifyOptions)],
+  ffmpeg: {
+    args: {
+      globalOptions: ["-reconnect", "1", "-reconnect_streamed", "1", "-reconnect_delay_max", "5"],
+    },
+  },
 });
 
 // ============================================================
