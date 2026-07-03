@@ -1,0 +1,3 @@
+[scripts]
+build = "npm install --legacy-peer-deps"
+start = "npm start"
