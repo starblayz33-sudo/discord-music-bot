@@ -117,7 +117,7 @@ async function safeSend(
 // ============================================================
 //  حدث: البوت جاهز
 // ============================================================
-client.once("ready", () => {
+client.once("clientReady", () => {
   console.log(`✅ تم تشغيل البوت بنجاح باسم: ${client.user?.tag}`);
   console.log(`📡 متصل بـ ${client.guilds.cache.size} سيرفر`);
   client.user?.setActivity("🎵 الموسيقى | !help");
