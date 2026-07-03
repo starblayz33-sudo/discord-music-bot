@@ -1,0 +1,5 @@
+[deploy]
+startCommand = "pnpm --filter @workspace/discord-bot run start"
+
+[build]
+buildCommand = "pnpm install && pnpm --filter @workspace/discord-bot run build"
